@@ -14,9 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+|  1.5  | "must be whole #" | "go lower"      | none                   |
+|  -90  | "out of bounds"   | "go lower"      | none                   |
+|  50   | "go lower"        | "go higher"     | none                   |
 
 ---
 
