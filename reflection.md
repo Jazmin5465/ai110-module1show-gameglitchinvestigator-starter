@@ -8,6 +8,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+  One bug was that the new game button didn't reset the message "Start a new game to play again" as well as not updating the number of attempts left. Another bug was that changing difficulty level is supposed to update the range in which users can guess as well as number of attempts and the message being displayed does not reflect this change.
+
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
@@ -17,6 +19,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |  1.5  | "must be whole #" | "go lower"      | none                   |
 |  -90  | "out of bounds"   | "go lower"      | none                   |
 |  50   | "go lower"        | "go higher"     | none                   |
+|  Hard | "Range 1-100"     | "Range 1-50"    | none                   |
 
 ---
 
