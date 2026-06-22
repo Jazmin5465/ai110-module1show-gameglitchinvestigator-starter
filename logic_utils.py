@@ -1,4 +1,6 @@
 
+#FIX: Moved game logic functions from app.py to this separate file for better organization and testability.
+#FIX: Edited the ranges for each difficulty level.
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     if difficulty == "Easy":
@@ -9,7 +11,7 @@ def get_range_for_difficulty(difficulty: str):
         return 1, 100
     return 1, 100
 
-
+#FIX: Added input validation to the parse_guess function.
 def parse_guess(raw: str, low=None, high=None):
     """
     Parse user input into an int guess.
@@ -37,7 +39,7 @@ def parse_guess(raw: str, low=None, high=None):
 
     return True, value, None
 
-
+#FIX: Edited return messsage to accurately give hints.
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).
