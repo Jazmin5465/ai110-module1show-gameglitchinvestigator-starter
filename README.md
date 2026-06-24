@@ -25,11 +25,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [X] Describe the game's purpose.
+- [X] Describe the game's purpose:
 This number guessing generates a secret number falling into a range depending on difficulty level. The user then has a limited amount of guesses to try to correctly guess the secret number. The game will optionally give hints if a guess was lower or higher than the secret number.
-- [X] Detail which bugs you found.
+- [X] Detail which bugs you found:
 A few of the bugs I found include function logic not being in the right file, a user's ability to guess a number outside of the designated range, ability to guess non-integer numbers, and the difficulty ranges did not line up with the correct difficulty modes.
-- [X] Explain what fixes you applied.
+- [X] Explain what fixes you applied:
 With the help of AI, we moved the function logic from app.py into logic_utils.py. I also had the AI generate input verification to ensure that the user's guess was a valid guess in the right range and data type before counting it as one of their attempts. Lastly, I had the AI find the lines of code where difficulty levels assigned ranges and made sure that they were correctly modified as well as updating correctly in the UI. We checked these fixes by adding tests for different scenarios that were ran using pytest.
 
 ## 📸 Demo Walkthrough
