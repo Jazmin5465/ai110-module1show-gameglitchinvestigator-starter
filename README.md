@@ -25,19 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 9.5
+2. Game returns "Enter a whole number (no decimals).
+3. User enters a guess of 45
+4. Game returns "Go LOWER!"
+5. Score and number of attempts updates after every valid/in-range guess
+6. Game ends after correct guess or user runs out of attempts
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -46,7 +47,15 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
-# ========================= X passed in 0.XXs =========================
+========================================== test session starts ===========================================
+platform win32 -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\jazmi\OneDrive\Codepath\Proj 1\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 9 items                                                                                         
+
+tests\test_game_logic.py .........                                                                  [100%]
+
+=========================================== 9 passed in 0.18s ============================================
 ```
 
 ## 🚀 Stretch Features

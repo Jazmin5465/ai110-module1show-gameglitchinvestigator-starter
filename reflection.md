@@ -59,11 +59,21 @@ I asked the AI to write the test cases by considering all scenarios (in range, o
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit runs the python script again every time the user interacts with the web app. It is similar to refreshing a page so that it can update to make the changes required from the user's interaction. Session state is how the webpage automatically stores data across these reruns so that it does not reset data when not neccessary such as variable data that is still needed.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+One thing I learned was to set up the mode in claude to best reflect was I need it to do. For example, if I need help with debugging or understanding the code, I use the plan mode so that the AI and I can look through different alternate solutions and explanations. If I instead need help with simple stuff, I learned that it was quicker to use the "ask before editing" mode that allows me to approve suggested changes that are quickly put into the code.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+I would ask it to list a few possible causes of a bug and the possible solutions to fixing it before trying to commit to just one solution. Sometimes what the AI first suggests isn't correct or the best solution so looking through different options would help me give my manual input and decision making.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I feel like this project helped me understand that you have to guide the AI in the right direction for the most accurate responses. Things like leaving comments in the code of what you want it to do and where or by giving it a specific line of code to work on proved to be more efficient then just telling it to fix a problem in the code.
